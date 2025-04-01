@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: SEE 
+// SPDX-License-Identifier: MIT 
 pragma solidity ;
 
 contract Tracking {
