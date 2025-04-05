@@ -2,7 +2,7 @@
 pragma solidity ;
 
 contract Tracking {
-    enum ShipmentStatus {}
+    enum ShipmentStatus {PENDING}
     constructor() {
         owner = msg.sender;
     }
