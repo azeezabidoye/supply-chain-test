@@ -5,6 +5,6 @@ contract Tracking {
     uint256 public shipmentCount;
     enum ShipmentStatus {PENDING, IN_TRANSIT, DELIVERED}
     constructor() {
-        owner = msg.sender;
+        shipmentCount = 0;
     }
 }
