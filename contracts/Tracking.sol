@@ -11,5 +11,6 @@ contract Tracking {
     struct Shipment {
         address sender;
         address reciever;
+        uint256 pickUpTime;
     }
 }
