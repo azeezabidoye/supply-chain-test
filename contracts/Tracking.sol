@@ -7,4 +7,8 @@ contract Tracking {
     constructor() {
         shipmentCount = 0;
     }
+
+    struct Shipment {
+        
+    }
 }
