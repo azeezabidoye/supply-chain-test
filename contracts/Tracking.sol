@@ -14,5 +14,6 @@ contract Tracking {
         uint256 pickUpTime;
         uint256 deliveryTime;
         uint256 distance;
+        uint256 price;
     }
 }
