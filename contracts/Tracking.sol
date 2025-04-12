@@ -9,6 +9,6 @@ contract Tracking {
     }
 
     struct Shipment {
-        
+        address sender;
     }
 }
