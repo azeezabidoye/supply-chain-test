@@ -18,4 +18,6 @@ contract Tracking {
         ShipmentStatus status;
         bool isPaid;
     }
+
+    mapping (address => Shipments[]) public shipments;
 }
