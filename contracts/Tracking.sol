@@ -19,5 +19,5 @@ contract Tracking {
         bool isPaid;
     }
 
-    mapping (address => Shipments[]) public shipments;
+    mapping (address => Shipment[]) public shipments;
 }
