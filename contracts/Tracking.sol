@@ -20,4 +20,8 @@ contract Tracking {
     }
 
     mapping (address => Shipment[]) public shipments;
+
+    struct TypeShipments {
+        
+    }
 }
