@@ -22,6 +22,6 @@ contract Tracking {
     mapping (address => Shipment[]) public shipments;
 
     struct TypeShipment {
-        
+        address sender;
     }
 }
