@@ -24,5 +24,6 @@ contract Tracking {
     struct TypeShipment {
         address sender;
         address reciever;
+        uint256 pickUpTime;
     }
 }
