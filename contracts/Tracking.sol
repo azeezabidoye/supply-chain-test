@@ -25,5 +25,6 @@ contract Tracking {
         address sender;
         address reciever;
         uint256 pickUpTime;
+        uint256 deliveryTime;
     }
 }
