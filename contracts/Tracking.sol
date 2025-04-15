@@ -29,5 +29,6 @@ contract Tracking {
         uint256 distance;
         uint256 price;
         ShipmentStatus status;
+        bool isPaid;
     }
 }
