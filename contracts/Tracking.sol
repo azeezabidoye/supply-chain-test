@@ -23,5 +23,6 @@ contract Tracking {
 
     struct TypeShipment {
         address sender;
+        address reciever;
     }
 }
