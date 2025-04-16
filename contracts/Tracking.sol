@@ -40,5 +40,18 @@ contract Tracking {
              shipments[msg.sender].push(shipment);
              shipmentCount++;
 
+            typeShipments.push(
+                TypeShipment (
+                    msg.sender,
+                    _reciever,
+                    _pickUpTime,
+                    0,
+                    _distance,
+                    _price,
+                    ShipmentStatus.PENDING,
+                    false
+                )
+            );
+
         }
 }
