@@ -38,6 +38,7 @@ contract Tracking {
              Shipment memory shipment = Shipment(msg.sender, _reciever, _pickUpTime, 0, _distance, _price, ShipmentStatus.PENDING, false);
 
              shipments[msg.sender].push(shipment);
+             shipmentCount++;
 
         }
 }
