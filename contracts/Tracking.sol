@@ -32,6 +32,7 @@ contract Tracking {
         bool isPaid;
     }
 
+    // Function for Creating a New Shipment 
     function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
         require(msg.value == _price, "Payment amount must equal the price");
 
