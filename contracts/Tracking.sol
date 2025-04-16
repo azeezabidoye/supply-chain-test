@@ -32,5 +32,8 @@ contract Tracking {
         bool isPaid;
     }
 
-        function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {}
+        function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
+            require(msg.value == _price, "Payment amount must equal the price");
+
+        }
 }
