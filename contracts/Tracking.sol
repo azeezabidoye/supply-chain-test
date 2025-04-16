@@ -53,5 +53,7 @@ contract Tracking {
                 )
             );
 
+            emit ShipmentCreated(msg.sender, _reciever, _pickUpTime, _distance, _price);
+
         }
 }
