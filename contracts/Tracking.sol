@@ -32,28 +32,28 @@ contract Tracking {
         bool isPaid;
     }
 
-        function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
-            require(msg.value == _price, "Payment amount must equal the price");
+    function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
+        require(msg.value == _price, "Payment amount must equal the price");
 
-             Shipment memory shipment = Shipment(msg.sender, _reciever, _pickUpTime, 0, _distance, _price, ShipmentStatus.PENDING, false);
+            Shipment memory shipment = Shipment(msg.sender, _reciever, _pickUpTime, 0, _distance, _price, ShipmentStatus.PENDING, false);
 
-             shipments[msg.sender].push(shipment);
-             shipmentCount++;
+            shipments[msg.sender].push(shipment);
+            shipmentCount++;
 
-            typeShipments.push(
-                TypeShipment (
-                    msg.sender,
-                    _reciever,
-                    _pickUpTime,
-                    0,
-                    _distance,
-                    _price,
-                    ShipmentStatus.PENDING,
-                    false
-                )
-            );
+        typeShipments.push(
+            TypeShipment (
+                msg.sender,
+                _reciever,
+                _pickUpTime,
+                0,
+                _distance,
+                _price,
+                ShipmentStatus.PENDING,
+                false
+            )
+        );
 
-            emit ShipmentCreated(msg.sender, _reciever, _pickUpTime, _distance, _price);
+        emit ShipmentCreated(msg.sender, _reciever, _pickUpTime, _distance, _price);
 
-        }
+    }
 }
