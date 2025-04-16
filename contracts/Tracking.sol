@@ -35,5 +35,7 @@ contract Tracking {
         function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
             require(msg.value == _price, "Payment amount must equal the price");
 
+             Shipment memory shipment = Shipment(msg.sender, _reciever, _pickUpTime, 0, _distance, _price, ShipmentStatus.PENDING, false);
+
         }
 }
