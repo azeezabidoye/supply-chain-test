@@ -1,6 +1,8 @@
 const hre = require("hardhat");
 
-async function main() {}
+async function main() {
+  const Tracking = await hre.ethers.getContractFactory("Tracking");
+}
 
 main.catch((error) => {
   console.error(error);
