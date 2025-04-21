@@ -7,6 +7,8 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
-    crossfiTestnet: {},
+    crossfiTestnet: {
+      chainId: 4157,
+    },
   },
 };
