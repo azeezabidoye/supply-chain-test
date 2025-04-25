@@ -5,6 +5,10 @@ contract Tracking {
     enum ShipmentStatus {PENDING, IN_TRANSIT, DELIVERED}
     uint256 public shipmentCount;
 
+        constructor() {
+        shipmentCount = 0;
+    }
+
     struct Shipment {
         address sender;
         address reciever;
@@ -36,9 +40,7 @@ contract Tracking {
     event ShipmentDelivered(address indexed sender, address indexed  reciever, uint256 deliveryTime);
     event ShipmentPaid(address indexed sender, address indexed  reciever, uint256 amount);
 
-    constructor() {
-        shipmentCount = 0;
-    }
+
 
     function createShipment(address _reciever, uint256 _pickUpTime, uint256 _distance, uint256 _price) public payable {
         require(msg.value == _price, "Payment amount must equal the price");
