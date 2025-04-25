@@ -5,7 +5,7 @@ contract Tracking {
     enum ShipmentStatus {PENDING, IN_TRANSIT, DELIVERED}
     uint256 public shipmentCount;
 
-        constructor() {
+    constructor() {
         shipmentCount = 0;
     }
 
