@@ -10,7 +10,7 @@ contract Tracking {
     uint256 public shipmentCount;
 
     constructor() {
-        shipmentCount = 0;
+        shipmentCount = 10;
     }
 
     struct Shipment {
