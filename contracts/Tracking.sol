@@ -2,11 +2,11 @@
 pragma solidity 0.8.28;
 
 contract Tracking {
-    enum ShipmentStatus {
-        PENDING,
-        IN_TRANSIT,
-        DELIVERED
-    }
+    // enum ShipmentStatus {
+    //     PENDING,
+    //     IN_TRANSIT,
+    //     DELIVERED
+    // }
     uint256 public shipmentCount;
 
     constructor() {
