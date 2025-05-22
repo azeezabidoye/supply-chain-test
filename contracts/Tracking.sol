@@ -7,7 +7,8 @@ contract Tracking {
         IN_TRANSIT,
         DELIVERED
     }
-    uint256 public shipmentCount;
+
+    // uint256 public shipmentCount;
 
     constructor() {
         shipmentCount = 0;
