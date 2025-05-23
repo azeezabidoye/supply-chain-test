@@ -38,7 +38,7 @@ contract Tracking {
         bool isPaid;
     }
 
-    // TypeShipment[] typeShipments;
+    TypeShipment[] typeShipments;
 
     event ShipmentCreated(
         address indexed sender,
