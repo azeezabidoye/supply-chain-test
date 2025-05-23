@@ -25,7 +25,7 @@ contract Tracking {
         bool isPaid;
     }
 
-    // mapping(address => Shipment[]) public shipments;
+    mapping(address => Shipment[]) public shipments;
 
     struct TypeShipment {
         address sender;
