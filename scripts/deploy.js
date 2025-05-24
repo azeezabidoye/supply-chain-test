@@ -8,7 +8,7 @@ async function main() {
   console.log(`Tracking deployed to ${tracking.address}`);
 }
 
-// main.catch((error) => {
-//   console.error(error);
-//   process.exitCode = 1;
-// });
+main.catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
