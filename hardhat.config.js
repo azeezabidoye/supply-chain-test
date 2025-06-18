@@ -8,7 +8,7 @@ module.exports = {
       chainId: 1337,
     },
     crossfiTestnet: {
-      // chainId: 4157,
+      chainId: 4157,
     },
   },
 };
